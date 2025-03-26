@@ -1,0 +1,18 @@
+CREATE DATABASE IF NOT EXISTS Bihar;
+
+USE Bihar;
+DROP DATABASE IF EXISTS schl;
+
+CREATE TABLE city(
+id INT PRIMARY KEY,
+city VARCHAR(20),
+age INT,
+CONSTRAINT age_check CHECK (age>=18 AND city = "cpr")
+);
+
+
+
+CREATE TABLE newTab(
+age INT CHECK (age>=18)
+);
+
